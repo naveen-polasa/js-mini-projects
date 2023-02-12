@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body class=" text-white text-center bg-[url('/src/assets/bg.jpg')] 
+bg-cover bg-no-repeat bg-center h-[100vh] ">
+
+    <div class="bg-black bg-opacity-50  h-[100vh]">
+        <form class="py-24 mx-4" id="form">
+            <h2 class="text-3xl p-4 m-2 ">Weather App</h2>
+            <input type="text" placeholder="Enter City Name" name="city"
+                class="h-12 p-2 w-[70%] md:w-[60%] lg:w-[50%] rounded-md text-black city">
+            <button class="text-white border rounded-md ml-1 p-2 px-5 border-red-500 h-12 hover:bg-red-400 hover:border-white duration-200">Search</button>
+        </form>
+        <div class="res-container hidden">
+            <h3 class="text-3xl m-4">Weather Details</h3>
+            <h2 class="text-2xl">Temperature: <span class="res"></span></h2>
+            <div>
+                <img src="" alt="" class="mx-auto icon">
+                <h3 class="main text-3xl"></h3>
+            </div>
+        </div>
+        <h1 class="error text-red-700 m-4 text-3xl"></h1>
+    </div>
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
